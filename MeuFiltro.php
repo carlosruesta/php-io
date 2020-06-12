@@ -18,7 +18,7 @@ class MeuFiltro extends php_user_filter
 
             foreach ($linhas as $linha) {
                 if (stripos($linha, 'parte') !== false) {
-                    $saida .= "$linha\n";
+                    $saida .= str_replace("parte", "[PARTE]", $linha) . '\n';
                 }
             }
         }

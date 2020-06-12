@@ -23,3 +23,5 @@ echo fread($arquivoCursos, filesize('lista-cursos.txt'));
 
 
 
+
+
